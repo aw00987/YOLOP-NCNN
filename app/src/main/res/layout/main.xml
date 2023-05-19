@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="3dp">
+        <Button
+            android:id="@+id/btn_cpu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="CPU"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/btn_gpu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="GPU"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <SurfaceView
+        android:id="@+id/view_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
